@@ -24,4 +24,8 @@ public class Node{
     public Node getNextRight(){
         return this.right;
     }
+
+    public String getData(){
+        return this.data;
+    }
 }
