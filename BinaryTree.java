@@ -67,4 +67,8 @@ public class BinaryTree{
         printRecc(elements,node.getNextLeft());
     }
 
+    public boolean isLeaf(){
+        return (current.getNextLeft()==null && current.getNextRight()==null)
+    }
+
 }
