@@ -36,6 +36,21 @@ public class testTrees{
 
             System.out.println("Do you like "+temp+ " better than "+tree.getCurrent().getData()+"?");
             String response = scan.next();
+
+            switch (response){
+                case "Y":
+                case "y":
+                    System.out.println("yes");
+                    break;
+
+                case "N":
+                case "n":
+                    System.out.println("no");
+                    break;
+                default:
+                    System.out.println("TODO add a loop");
+                    break;
+            }
             
         }
 
