@@ -14,6 +14,7 @@ public class testTrees{
         // tree.printTree();
 
         runFavorites(fastFood);
+        
     }
 
     public static void runFavorites(ArrayList<String> list){
@@ -26,7 +27,7 @@ public class testTrees{
         BinaryTree tree = new BinaryTree(new Node(root));
         System.out.println("Your starting point is "+root);
         System.out.println("Type \"y\" for yes and \"n\" for no");
-        tree.resetCurrent();
+        
 
         Scanner scan = new Scanner(System.in);
         while(list.size()>0){
@@ -34,35 +35,54 @@ public class testTrees{
             String temp = (list.get(nextRand));
             list.remove(nextRand);
 
-            System.out.print("Do you like "+temp+ " better than "+tree.getCurrent().getData()+"? ");
-
-            boolean scanBool = false;
-            while(!scanBool){
-                String response = scan.next();
-                switch (response){
-                    case "Y":
-                    case "y":
-                        //System.out.println("yes");
-                        scanBool=true;
-                        break;
-    
-                    case "N":
-                    case "n":
-                        //System.out.println("no");
-                        scanBool=true;
-                        break;
-                    default:
-                        System.out.println("Invalid input, please try again");
-                        break;
+            boolean placed = false;
+            tree.resetCurrent();
+            while(!placed){
+                System.out.print("Do you like "+temp+ " better than "+tree.getCurrent().getData()+"? ");
+                boolean scanBool = false;
+                while(!scanBool){
+                    String response = scan.next();
+                    switch (response){
+                        case "Y":
+                        case "y":
+                            if(tree.getRight()==null){
+                                tree.getCurrent().setRight(new Node(temp));
+                                placed =true;
+                            }else{
+                                tree.moveCurrentRight();
+                            }
+                            //System.out.println("yes");
+                            scanBool=true;
+                            break;
+        
+                        case "N":
+                        case "n":
+                            //System.out.println("no");
+                            if(tree.getLeft()==null){
+                                tree.getCurrent().setLeft(new Node(temp));
+                                placed =true;
+                            }else{
+                                tree.moveCurrentLeft();
+                            }
+                            scanBool=true;
+                            break;
+                        default:
+                            System.out.println("Invalid input, please try again");
+                            break;
+                    }
                 }
             }
+
+
+            
             
             
         }
         scan.close();
         //tree.printTree();
         //System.out.println(list.get(start));
+        tree.printTree();
     }
 
-    
+
 }

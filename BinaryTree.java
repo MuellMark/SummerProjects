@@ -20,7 +20,7 @@ public class BinaryTree{
     }
 
     public Node getRight(){
-        return this.current.getNextRightt();
+        return this.current.getNextRight();
     }
 
     public void setLeft(Node node){
@@ -68,7 +68,7 @@ public class BinaryTree{
     }
 
     public boolean isLeaf(){
-        return (current.getNextLeft()==null && current.getNextRight()==null)
+        return (current.getNextLeft()==null && current.getNextRight()==null);
     }
 
 }
