@@ -34,28 +34,35 @@ public class testTrees{
             String temp = (list.get(nextRand));
             list.remove(nextRand);
 
-            System.out.println("Do you like "+temp+ " better than "+tree.getCurrent().getData()+"?");
-            String response = scan.next();
+            System.out.print("Do you like "+temp+ " better than "+tree.getCurrent().getData()+"? ");
 
-            switch (response){
-                case "Y":
-                case "y":
-                    System.out.println("yes");
-                    break;
-
-                case "N":
-                case "n":
-                    System.out.println("no");
-                    break;
-                default:
-                    System.out.println("TODO add a loop");
-                    break;
+            boolean scanBool = false;
+            while(!scanBool){
+                String response = scan.next();
+                switch (response){
+                    case "Y":
+                    case "y":
+                        //System.out.println("yes");
+                        scanBool=true;
+                        break;
+    
+                    case "N":
+                    case "n":
+                        //System.out.println("no");
+                        scanBool=true;
+                        break;
+                    default:
+                        System.out.println("Invalid input, please try again");
+                        break;
+                }
             }
             
+            
         }
-
         scan.close();
         //tree.printTree();
         //System.out.println(list.get(start));
     }
+
+    
 }
