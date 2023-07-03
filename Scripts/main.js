@@ -1,6 +1,3 @@
-clickme.addEventListener('click',function(){
-    alert('AUUUUUUGHH');
-})
-// clickme2.addEventListener('click',function(){
-//     alert('Whadahell');
-// })
+function test(){
+    alert("What");
+}
