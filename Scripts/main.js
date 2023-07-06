@@ -10,7 +10,7 @@ function test(){
     //while(i){
         //document.getElementById("demo").innerHTML = num;
         let num2=2;
-        //setTimeout(donothing,1000);
+        setTimeout(donothing,1000);
         document.getElementById("demo").innerHTML = num2;
     //}
 
