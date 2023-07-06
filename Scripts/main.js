@@ -9,3 +9,9 @@ function test(){
     element.innerHTML =x
     x++;
 }
+
+var bar = document.getElementById('bar');
+    if(bar && bar.style){
+        bar.style.height = '20px';
+        bar.style.width = '100px';
+    }
