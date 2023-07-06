@@ -11,9 +11,9 @@ function test(){
     x++;
     var bar = document.getElementById('bar');
     if(bar && bar.style){
-        bar.style.height = '20px';
-        bar.style.width = width+'px';
+        bar.height = 20;
+        bar.width = width;
     }
-    width+=10;
+    width+=1;
 }
 
