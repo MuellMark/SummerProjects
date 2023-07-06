@@ -1,17 +1,11 @@
 // clickme.addEventListener('click',function(){
 //     alert('AUUUUUUGHH');
 // })
-
+let x =1;
 const element = document.getElementById("demo");
-//document.getElementById("demo").innerHTML = "AAA";
-//
-setInterval(callInterval(),1000);
-function callInterval(){
-    let num=1;
-    //while(i){
-        element.innerHTML+="num";
-        //document.getElementById("demo").innerHTML = num2;
-    //}
+setInterval(test, 1000);
 
-    //document.getElementById("demo").innerHTML = "whaaat";
+function test(){
+    element.innerHTML =x
+    x++;
 }
