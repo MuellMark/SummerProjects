@@ -14,6 +14,6 @@ function test(){
         bar.style.height = '20px';
         bar.style.width = width+'px';
     }
-    width++;
+    width+=10;
 }
 
