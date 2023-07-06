@@ -3,9 +3,9 @@
 // })
 
 const element = document.getElementById("demo");
-document.getElementById("demo").innerHTML = "AAA";
+//document.getElementById("demo").innerHTML = "AAA";
 //
-    setInterval(callInterval(),1000);
+setInterval(callInterval(),1000);
 function callInterval(){
     let num=1;
     //while(i){
