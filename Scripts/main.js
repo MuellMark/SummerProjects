@@ -1,6 +1,9 @@
 clickme.addEventListener('click',function(){
     alert('AUUUUUUGHH');
 })
-// clickme2.addEventListener('click',function(){
-//     alert('Whadahell');
-// })
+
+document.getElementById("demo").innerHTML = "AAA";
+
+function test(){
+    document.getElementById("demo").innerHTML = "whaaat";
+}
