@@ -10,3 +10,14 @@ p {
     text-align: center;
     color: rgb(0, 0, 0);
   }
+.container {
+    position: relative;
+    /* text-align: center; */
+    color: white;
+  }
+  /* Bottom left text */
+.in-Bar {
+  position: absolute;
+  bottom: 5px;
+  left: 2px; 
+}

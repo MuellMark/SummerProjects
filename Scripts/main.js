@@ -2,7 +2,7 @@
 //     alert('AUUUUUUGHH');
 // })
 let x =1;
-let width = 20;
+let width = 110;
 var bar = document.getElementById('bar');
 const element = document.getElementById("demo");
 
