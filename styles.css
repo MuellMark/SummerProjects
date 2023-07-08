@@ -21,3 +21,12 @@ p {
   bottom: 5px;
   left: 2px; 
 }
+.column{
+  float: left;
+  
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
