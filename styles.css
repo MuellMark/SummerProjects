@@ -19,14 +19,14 @@ p {
 .in-Bar {
   position: absolute;
   bottom: 5px;
-  left: 2px; 
+  left: 21px; 
 }
 .column{
   float: left;
   
 }
-.row::after {
+/* .row::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
