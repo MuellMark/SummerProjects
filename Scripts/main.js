@@ -17,5 +17,6 @@ function test(){
         bar.width = width;
     }
     width+=1;
+    // Add the number here somehow, have the position change
 }
 

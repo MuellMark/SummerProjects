@@ -27,7 +27,7 @@ p {
 }
 .numbers{
   float: right;
-  /* position: relative; */
+  position: relative;
   color:black
 }
 .row::after {
