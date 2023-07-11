@@ -12,7 +12,9 @@ p {
   }
 .container {
     position: relative;
-    /* text-align: center; */
+    align-items: center;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
     color: white;
   }
   /* Bottom left text */
@@ -26,7 +28,7 @@ p {
   
 }
 .numbers{
-  float: right;
+  float:right;
   position: relative;
   color:black
 }
