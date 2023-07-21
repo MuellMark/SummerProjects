@@ -11,8 +11,10 @@ try:
     for i  in range(width):
         for j in range(height):
             if(pixel_map[i,j]!=(255, 255, 255, 0)):
-                if(pixel_map[i,j][0]!=16):
-                    pixel_map[i,j]=(255, 255, 0, 255)
+                #if(pixel_map[i,j][0]!=16):
+                if(pixel_map[i,j]==(32, 65, 106, 255)):
+                    print(pixel_map[i,j])
+                    pixel_map[i,j]=(255, 0, 0, 255)
     #print(img.size)
     img.save("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS edited.png")
 except IOError:
