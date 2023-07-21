@@ -4,7 +4,8 @@ from PIL import Image
 # an object of Image type is returned and stored in img variable)
    
 try: 
-    img  = Image.open("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS.png")
+    img = Image.new(mode="RGB", size=(80, 80), color="White")
+    # img  = Image.open("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS.png")
     #img = img.rotate(180) 
     pixel_map = img.load()
     width,height = img.size
@@ -16,7 +17,7 @@ try:
                     print(pixel_map[i,j])
                     pixel_map[i,j]=(255, 0, 0, 255)
     #print(img.size)
-    img.save("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS edited.png")
+    img.save("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/test.png")
 except IOError:
     pass
 # Use the above statement within try block, as it can 
