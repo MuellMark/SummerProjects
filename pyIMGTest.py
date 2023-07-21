@@ -5,8 +5,16 @@ from PIL import Image
    
 try: 
     img  = Image.open("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS.png")
-    img = img.rotate(180) 
-    img.save("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS.png")
+    #img = img.rotate(180) 
+    pixel_map = img.load()
+    width,height = img.size
+    for i  in range(width):
+        for j in range(height):
+            if(pixel_map[i,j]!=(255, 255, 255, 0)):
+                if(pixel_map[i,j][0]!=16):
+                    pixel_map[i,j]=(255, 255, 0, 255)
+    #print(img.size)
+    img.save("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS edited.png")
 except IOError:
     pass
 # Use the above statement within try block, as it can 
