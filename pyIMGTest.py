@@ -10,19 +10,21 @@ def makeBody():
     starty=y
     cont=True
     check1=True
+    print(x)
+    print(y)
     while(cont):
         #randInt = random.randint(0,100)
         while(check1):
             randInt = random.randint(0,100)
             if randInt<20: x-=1
-            elif randInt<50: y-=1
+            elif randInt<30: y-=1
             if(x==upper_limit or y==upper_limit):
                 check1=False
             pixel_map[x,y]=(0, 0, 0, 255)
             
         cont=False
 
-    print(x)
+    #print(x)
 try: 
     img = Image.new(mode="RGB", size=(80, 80), color="White")
     # img  = Image.open("/Users/markymarkscomputer/Desktop/Summer Projects/SummerProjects/typhlosion HGSS.png")
